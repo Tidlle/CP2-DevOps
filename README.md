@@ -211,32 +211,8 @@ Esse comando deve ser usado após o INSERT, UPDATE e DELETE para evidenciar as a
 
 ---
 
-# Comandos de evidência para o PDF
-
-Execute e tire prints:
-
-```bash
-docker ps
-docker image ls
-docker volume ls
-docker network ls
-```
-
----
-
 # Remover ambiente
 
 ```bash
 ./scripts/remover.sh
 ```
-
----
-
-## Observações
-
-- O banco MySQL possui volume nomeado para persistência.
-- A API e o banco estão na mesma rede Docker.
-- Os containers possuem nomes com o RM.
-- As portas foram expostas com `-p`.
-- As variáveis de ambiente foram configuradas com `-e`.
-- Os containers executam em segundo plano com `-d`.
